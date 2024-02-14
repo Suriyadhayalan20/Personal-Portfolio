@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9cbb78f5ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1>Suriya D</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi! I'm <span>Suriya</span></h1>
+                <p>Web Developer</p>
+                <img class="welcomeimg" src="images/Image1.png" alt="">
+               
+            </div>
+        </div>
+        <!--------------------about------------------>
+        <div class="about">
+            <div class="containter">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./images/Image2.jpg" alt="no img">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-titles">About Me</h1>
+                        <p>Greeting! I'm Suriya, an aspiring web developer with a keen eye for creating
+                            engaging digital landscapes. My recent completion of Bachelor's Computer Application has
+                            fueled my passion for frontend development, a journey that began at Besant Technologies.
+                            There, I
+                            immersed myself in HTML, CSS, and JavaScript, translating theoretical knowledge into
+                            practical skills through hands-on projects. One notable achievement includes Frontend
+                            Development with React JS, showcasing my commitment to producing aesthetically pleasing and
+                            functional websites. As I navigate the dynamic realm of web development, my portfolio serves
+                            as a visual chronicle of my progress and dedication. Eager to contribute to innovative
+                            projects and continuously learn, I invite you to explore my evolving skills and join me on
+                            this exciting venture into the ever-evolving world of web development..</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML, CSS, JAVASCRIPT, REACT JS</li>
+                                <li><span>Database</span><br>Sql/Oracle Development</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 - Current</span><br>Ar Analyst at iSource, ITES</li>
+                                <li><span>2021 - 2023</span><br>Coronis Ajuba Soution Pvt.Ltd</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>March 2023 - June 2023</span><br>Fontend Development at Besant Technologies</li>
+                                <li><span>June 2023 - Dec 2023</span><br>Sql/Oracle Database at Besant Technologies</li>
+                                <li><span>2018 - 2021</span><br>Bachelor's of Computer Application at K.R.M.M.C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---------portfolio--------- -->
+                <div id="portfolio">
+                    <div class="container">
+                        <h1 class="sub-title">My Work</h1>
+                        <div class="work-list">
+
+                            <div class="work netflix">
+                             <a href="https://eclectic-mandazi-4f449e.netlify.app/" target="_blank"><img src="./Images/Netflix Gif.gif" alt=""></a>
+                            </div>
+                            
+                            <div class="work form">
+                                <a href="https://dulcet-biscuit-e86bd0.netlify.app" target="_blank"><img src="./Images/Form Page2.png" alt=""></a>
+                            </div>
+
+                            <div class="work calculator">
+                                <a href="https://celebrated-dolphin-114813.netlify.app" target="_blank"><img src="./Images/Iphone Calculator.jfif" alt="" ></a>
+                            </div> 
+
+                            <div class="task">
+                            <h5 class="netflixtext">Netflix</h5>
+                            <h5 class="formtext">Form</h5>
+                            <h5 class="calctext">Calculator</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------Contact------------- -->
+
+                <div id="contact">
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-title">Contact Me</h1>
+                                <p><i class="fa-solid fa-paper-plane" ></i>suriyadhayalan2001@gmail.com</p>
+                                <p><i class="fa-solid fa-phone"></i> +91 7397288546</p>
+                                <div class="social-icon">
+                                    
+                                    <a href="https://www.linkedin.com/in/suriyadhayalan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://github.com/Suriyadhayalan20" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                                <a href="./Images/Suriya's Resume.pdf" target="_blank" download class="btn">Download CV</a>
+
+                            </div>
+                            <div class="contact-right">
+                                <form>
+                                    <input type="text" name="Name" placeholder="Your Name" required autocomplete="off">
+                                    <input type="email" name="email" placeholder="Your Email" required autocomplete="off">
+                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Suriya. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
